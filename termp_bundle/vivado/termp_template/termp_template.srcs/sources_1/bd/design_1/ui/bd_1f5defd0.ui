@@ -1,0 +1,38 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1440 -y 320 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1440 -y 340 -defaultsOSRD
+preplace port start_button -pg 1 -lvl 0 -x -40 -y 290 -defaultsOSRD
+preplace port done_led -pg 1 -lvl 5 -x 1440 -y 260 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 2 -x 540 -y 280 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 2 -x 540 -y 80 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 4 -x 1270 -y 140 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 540 -y 510 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 950 -y 220 -defaultsOSRD
+preplace inst top_0 -pg 1 -lvl 1 -x 140 -y 290 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 0 150 290 620 770 110 1120
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 780 200n
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 4 -10 140 310 400 740J 490 1120
+preplace netloc start_button_1 1 0 1 -20 290n
+preplace netloc top_0_ram_wr_en_o 1 1 1 270 330n
+preplace netloc top_0_ram_en_o 1 1 1 300 310n
+preplace netloc top_0_ram_dout_o 1 1 1 300 290n
+preplace netloc top_0_ram_addr_o 1 1 1 300 260n
+preplace netloc top_0_done_o 1 1 1 280 230n
+preplace netloc top_0_done_led_o 1 1 4 300 160 750J 60 NJ 60 1420J
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 460 N 460 1410
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 480 N 480 1420
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 2 320 0 740
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 760J 120 N
+preplace netloc axi_smc_M00_AXI 1 1 4 310 -10 NJ -10 NJ -10 1410
+levelinfo -pg 1 -40 140 540 950 1270 1440
+pagesize -pg 1 -db -bbox -sgen -170 -20 1560 660
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_bram_cntlr_cnt":"1",
+   "da_ps7_cnt":"1"
+}

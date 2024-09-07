@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../termp_template.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../termp_template.srcs/sources_1/bd/design_1/ipshared/8c62/hdl" --include "../../../../termp_template.srcs/sources_1/bd/design_1/ipshared/1ddd/hdl/verilog" --include "../../../../termp_template.srcs/sources_1/bd/design_1/ipshared/b2d0/hdl/verilog" --include "C:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../termp_template.srcs/sim_1/imports/test_bench/tb_fscanf_ex.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

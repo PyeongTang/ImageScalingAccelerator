@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_top.dut.rom_inst.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Total cycle:     131330 clock
+$stop called at time : 1313835 ns : File "C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sim_1/new/tb_top.v" Line 108

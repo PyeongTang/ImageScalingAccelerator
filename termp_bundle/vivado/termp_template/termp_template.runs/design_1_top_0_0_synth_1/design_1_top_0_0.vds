@@ -1,0 +1,925 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb 18 18:40:20 2024
+# Process ID: 2036
+# Current directory: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1
+# Command line: vivado.exe -log design_1_top_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_0_0.tcl
+# Log file: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1/design_1_top_0_0.vds
+# Journal file: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_top_0_0.tcl -notrace
+Command: synth_design -top design_1_top_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_top_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19960 
+WARNING: [Synth 8-2507] parameter declaration becomes local in fsm with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in fsm with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in fsm with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in fsm with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:37]
+WARNING: [Synth 8-2507] parameter declaration becomes local in fsm with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:38]
+WARNING: [Synth 8-2507] parameter declaration becomes local in fsm with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:39]
+WARNING: [Synth 8-2507] parameter declaration becomes local in top with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/top.v:158]
+WARNING: [Synth 8-2507] parameter declaration becomes local in top with formal parameter declaration list [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/top.v:159]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 722.184 ; gain = 186.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_top_0_0' [c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/synth/design_1_top_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/top.v:1]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter WAIT_DELAY bound to: 25'b1111111001010000000110100 
+	Parameter BMP_DIR bound to: C:/Users/qwer/Desktop/DSD_2022/lenna_from_verilog.bmp - type: string 
+	Parameter TXT_DIR bound to: C:/Users/qwer/Desktop/DSD_2022/lenna_from_verilog.txt - type: string 
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/top.v:194]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/top.v:195]
+INFO: [Synth 8-638] synthesizing module 'blk_rom' [c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/ip/blk_rom/synth/blk_rom.vhd:68]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 3 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_rom.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_rom.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 24 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 24 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 65536 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 65536 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 24 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 24 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 65536 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 65536 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 44 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     17.6057 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_3' declared at 'c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/ip/blk_rom/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_3' [c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/ip/blk_rom/synth/blk_rom.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'blk_rom' (11#1) [c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/ip/blk_rom/synth/blk_rom.vhd:68]
+INFO: [Synth 8-6157] synthesizing module 'rom_rd' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/rom_rd.v:1]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rom_rd' (12#1) [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/rom_rd.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fsm' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:1]
+	Parameter WAIT_DELAY bound to: 25'b1111111001010000000110100 
+	Parameter IDLE bound to: 3'b000 
+	Parameter ROM_DS bound to: 3'b001 
+	Parameter US_RAM bound to: 3'b010 
+	Parameter WAIT bound to: 3'b011 
+	Parameter DONE bound to: 3'b100 
+	Parameter SEC bound to: 25'b1111111001010000000110100 
+INFO: [Synth 8-6155] done synthesizing module 'fsm' (13#1) [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/fsm.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ds' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/ds.v:1]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ds' (14#1) [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/ds.v:1]
+INFO: [Synth 8-6157] synthesizing module 'us' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:1]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter WIDTH bound to: 256 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'us' (15#1) [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ram_wr' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/ram_wr.v:1]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_wr' (16#1) [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/ram_wr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_top_0_0' (18#1) [c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/synth/design_1_top_0_0.v:58]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[383]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[382]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[381]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[380]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[379]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[378]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[377]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[376]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[375]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[374]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[373]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[372]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[371]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[370]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[369]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[368]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[367]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[366]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[365]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[364]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[363]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[362]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[361]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[360]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[359]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[358]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[357]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[356]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[355]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[354]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[353]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[352]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[351]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[350]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[349]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[348]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[347]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[346]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[345]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[344]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[343]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[342]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[341]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[340]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[339]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[338]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[337]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[336]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[335]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[334]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[333]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[332]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[331]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[330]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[329]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[328]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[327]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[326]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[325]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[324]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[323]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[322]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[321]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[320]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[319]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[318]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[317]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[316]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[315]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[314]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[313]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[312]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[311]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[310]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[309]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[308]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[307]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[306]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ip/design_1_top_0_0/design_1_top_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1125.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.204 . Memory (MB): peak = 1125.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property DONT_TOUCH = true for inst/rom_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'fsm'
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[0][23:0]' into 'r_us_data_upper_reg[0][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[1][23:0]' into 'r_us_data_upper_reg[1][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[2][23:0]' into 'r_us_data_upper_reg[2][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[3][23:0]' into 'r_us_data_upper_reg[3][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[4][23:0]' into 'r_us_data_upper_reg[4][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[5][23:0]' into 'r_us_data_upper_reg[5][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[6][23:0]' into 'r_us_data_upper_reg[6][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[7][23:0]' into 'r_us_data_upper_reg[7][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[8][23:0]' into 'r_us_data_upper_reg[8][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[9][23:0]' into 'r_us_data_upper_reg[9][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[10][23:0]' into 'r_us_data_upper_reg[10][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[11][23:0]' into 'r_us_data_upper_reg[11][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[12][23:0]' into 'r_us_data_upper_reg[12][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[13][23:0]' into 'r_us_data_upper_reg[13][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[14][23:0]' into 'r_us_data_upper_reg[14][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[15][23:0]' into 'r_us_data_upper_reg[15][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[16][23:0]' into 'r_us_data_upper_reg[16][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[17][23:0]' into 'r_us_data_upper_reg[17][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[18][23:0]' into 'r_us_data_upper_reg[18][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[19][23:0]' into 'r_us_data_upper_reg[19][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[20][23:0]' into 'r_us_data_upper_reg[20][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[21][23:0]' into 'r_us_data_upper_reg[21][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[22][23:0]' into 'r_us_data_upper_reg[22][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[23][23:0]' into 'r_us_data_upper_reg[23][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[24][23:0]' into 'r_us_data_upper_reg[24][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[25][23:0]' into 'r_us_data_upper_reg[25][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[26][23:0]' into 'r_us_data_upper_reg[26][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[27][23:0]' into 'r_us_data_upper_reg[27][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[28][23:0]' into 'r_us_data_upper_reg[28][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[29][23:0]' into 'r_us_data_upper_reg[29][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[30][23:0]' into 'r_us_data_upper_reg[30][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[31][23:0]' into 'r_us_data_upper_reg[31][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[32][23:0]' into 'r_us_data_upper_reg[32][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[33][23:0]' into 'r_us_data_upper_reg[33][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[34][23:0]' into 'r_us_data_upper_reg[34][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[35][23:0]' into 'r_us_data_upper_reg[35][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[36][23:0]' into 'r_us_data_upper_reg[36][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[37][23:0]' into 'r_us_data_upper_reg[37][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[38][23:0]' into 'r_us_data_upper_reg[38][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[39][23:0]' into 'r_us_data_upper_reg[39][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[40][23:0]' into 'r_us_data_upper_reg[40][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[41][23:0]' into 'r_us_data_upper_reg[41][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[42][23:0]' into 'r_us_data_upper_reg[42][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[43][23:0]' into 'r_us_data_upper_reg[43][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[44][23:0]' into 'r_us_data_upper_reg[44][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[45][23:0]' into 'r_us_data_upper_reg[45][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[46][23:0]' into 'r_us_data_upper_reg[46][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[47][23:0]' into 'r_us_data_upper_reg[47][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[48][23:0]' into 'r_us_data_upper_reg[48][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[49][23:0]' into 'r_us_data_upper_reg[49][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[50][23:0]' into 'r_us_data_upper_reg[50][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[51][23:0]' into 'r_us_data_upper_reg[51][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[52][23:0]' into 'r_us_data_upper_reg[52][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[53][23:0]' into 'r_us_data_upper_reg[53][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[54][23:0]' into 'r_us_data_upper_reg[54][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[55][23:0]' into 'r_us_data_upper_reg[55][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[56][23:0]' into 'r_us_data_upper_reg[56][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[57][23:0]' into 'r_us_data_upper_reg[57][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[58][23:0]' into 'r_us_data_upper_reg[58][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[59][23:0]' into 'r_us_data_upper_reg[59][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[60][23:0]' into 'r_us_data_upper_reg[60][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[61][23:0]' into 'r_us_data_upper_reg[61][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[62][23:0]' into 'r_us_data_upper_reg[62][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[63][23:0]' into 'r_us_data_upper_reg[63][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[64][23:0]' into 'r_us_data_upper_reg[64][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[65][23:0]' into 'r_us_data_upper_reg[65][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[66][23:0]' into 'r_us_data_upper_reg[66][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[67][23:0]' into 'r_us_data_upper_reg[67][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[68][23:0]' into 'r_us_data_upper_reg[68][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[69][23:0]' into 'r_us_data_upper_reg[69][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[70][23:0]' into 'r_us_data_upper_reg[70][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[71][23:0]' into 'r_us_data_upper_reg[71][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[72][23:0]' into 'r_us_data_upper_reg[72][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[73][23:0]' into 'r_us_data_upper_reg[73][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[74][23:0]' into 'r_us_data_upper_reg[74][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[75][23:0]' into 'r_us_data_upper_reg[75][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[76][23:0]' into 'r_us_data_upper_reg[76][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[77][23:0]' into 'r_us_data_upper_reg[77][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[78][23:0]' into 'r_us_data_upper_reg[78][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[79][23:0]' into 'r_us_data_upper_reg[79][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[80][23:0]' into 'r_us_data_upper_reg[80][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[81][23:0]' into 'r_us_data_upper_reg[81][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[82][23:0]' into 'r_us_data_upper_reg[82][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[83][23:0]' into 'r_us_data_upper_reg[83][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[84][23:0]' into 'r_us_data_upper_reg[84][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[85][23:0]' into 'r_us_data_upper_reg[85][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[86][23:0]' into 'r_us_data_upper_reg[86][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[87][23:0]' into 'r_us_data_upper_reg[87][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[88][23:0]' into 'r_us_data_upper_reg[88][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[89][23:0]' into 'r_us_data_upper_reg[89][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[90][23:0]' into 'r_us_data_upper_reg[90][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[91][23:0]' into 'r_us_data_upper_reg[91][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[92][23:0]' into 'r_us_data_upper_reg[92][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[93][23:0]' into 'r_us_data_upper_reg[93][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[94][23:0]' into 'r_us_data_upper_reg[94][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[95][23:0]' into 'r_us_data_upper_reg[95][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[96][23:0]' into 'r_us_data_upper_reg[96][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[97][23:0]' into 'r_us_data_upper_reg[97][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[98][23:0]' into 'r_us_data_upper_reg[98][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Synth 8-4471] merging register 'r_us_data_lower_reg[99][23:0]' into 'r_us_data_upper_reg[99][23:0]' [C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/new/us.v:71]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                  ROM_DS |                            00010 |                              001
+                    WAIT |                            00100 |                              011
+                    DONE |                            01000 |                              100
+                  US_RAM |                            10000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'one-hot' in module 'fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 258   
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 424   
+	   5 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 128   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module rom_rd 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module fsm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+Module ds 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module us 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 257   
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 386   
+	   3 Input      1 Bit        Muxes := 128   
+Module ram_wr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\ram_wr_inst/ram_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_1/\ram_wr_inst/ram_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[255][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[254][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[253][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[252][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[251][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[250][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[249][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[248][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[247][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[246][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[245][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[244][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[243][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[242][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[241][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[240][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[239][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[238][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[237][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[236][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[235][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[234][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[233][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[232][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[231][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[230][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[229][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[228][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[227][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[226][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[225][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[224][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[223][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[222][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[221][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[220][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[219][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[218][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[217][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[216][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[215][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[214][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[213][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[212][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[211][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[210][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[209][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[208][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[207][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[206][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[205][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[204][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[203][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[202][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[201][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[200][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[199][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[198][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[197][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[196][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[195][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[194][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[193][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[192][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[191][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[190][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[189][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[188][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[187][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[186][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[185][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[184][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[183][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[182][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[181][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[180][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[179][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[178][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[177][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[176][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[175][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[174][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[173][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[172][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[171][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[170][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[169][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[168][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[167][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[166][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[165][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[164][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[163][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[162][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[161][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[160][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[159][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[158][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[157][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[156][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[155][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[154][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[153][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[152][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[151][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[150][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[149][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[148][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[147][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[146][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[145][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[144][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[143][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[142][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[141][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[140][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[139][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[138][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[137][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[136][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[135][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[134][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[133][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[132][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[131][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[130][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[129][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[128][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[127][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[126][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[125][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[124][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[123][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[122][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[121][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[120][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[119][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[118][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[117][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[116][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[115][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[114][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[113][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[112][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[111][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[110][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[109][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[108][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[107][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[106][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[105][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[104][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[103][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[102][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[101][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[100][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[99][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[98][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[97][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[96][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[95][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[94][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[93][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[92][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[91][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[90][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[89][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[88][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[87][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[86][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[85][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[84][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[83][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[82][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[81][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[80][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[79][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[78][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[77][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[76][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[75][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[74][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[73][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[72][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[71][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[70][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[69][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[68][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[67][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[66][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[65][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[64][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[63][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[62][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[61][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[60][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[59][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[58][16]'
+INFO: [Synth 8-3886] merging instance 'inst/us_inst/r_us_data_upper_reg[57][16]' (FDRE) to 'inst/us_inst/r_us_data_upper_reg[56][16]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |CARRY4      |    18|
+|2     |LUT1        |     7|
+|3     |LUT2        |    38|
+|4     |LUT3        |    18|
+|5     |LUT4        |    28|
+|6     |LUT5        |   152|
+|7     |LUT6        |   911|
+|8     |MUXF7       |   444|
+|9     |MUXF8       |   210|
+|10    |RAMB36E1    |     1|
+|11    |RAMB36E1_1  |     1|
+|12    |RAMB36E1_10 |     1|
+|13    |RAMB36E1_11 |     1|
+|14    |RAMB36E1_12 |     1|
+|15    |RAMB36E1_13 |     1|
+|16    |RAMB36E1_14 |     1|
+|17    |RAMB36E1_15 |     1|
+|18    |RAMB36E1_16 |     1|
+|19    |RAMB36E1_17 |     1|
+|20    |RAMB36E1_18 |     1|
+|21    |RAMB36E1_19 |     1|
+|22    |RAMB36E1_2  |     1|
+|23    |RAMB36E1_20 |     1|
+|24    |RAMB36E1_21 |     1|
+|25    |RAMB36E1_22 |     1|
+|26    |RAMB36E1_23 |     1|
+|27    |RAMB36E1_24 |     1|
+|28    |RAMB36E1_25 |     1|
+|29    |RAMB36E1_26 |     1|
+|30    |RAMB36E1_27 |     1|
+|31    |RAMB36E1_28 |     1|
+|32    |RAMB36E1_29 |     1|
+|33    |RAMB36E1_3  |     1|
+|34    |RAMB36E1_30 |     1|
+|35    |RAMB36E1_31 |     1|
+|36    |RAMB36E1_32 |     1|
+|37    |RAMB36E1_33 |     1|
+|38    |RAMB36E1_34 |     1|
+|39    |RAMB36E1_35 |     1|
+|40    |RAMB36E1_36 |     1|
+|41    |RAMB36E1_37 |     1|
+|42    |RAMB36E1_38 |     1|
+|43    |RAMB36E1_39 |     1|
+|44    |RAMB36E1_4  |     1|
+|45    |RAMB36E1_40 |     1|
+|46    |RAMB36E1_41 |     1|
+|47    |RAMB36E1_42 |     1|
+|48    |RAMB36E1_43 |     1|
+|49    |RAMB36E1_5  |     1|
+|50    |RAMB36E1_6  |     1|
+|51    |RAMB36E1_7  |     1|
+|52    |RAMB36E1_8  |     1|
+|53    |RAMB36E1_9  |     1|
+|54    |FDRE        |  3253|
+|55    |FDSE        |     1|
++------+------------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------+-----------------------------------------------+------+
+|      |Instance                                         |Module                                         |Cells |
++------+-------------------------------------------------+-----------------------------------------------+------+
+|1     |top                                              |                                               |  5124|
+|2     |  inst                                           |top                                            |  5124|
+|3     |    rom_inst                                     |blk_rom                                        |   194|
+|4     |      U0                                         |blk_mem_gen_v8_4_3                             |   194|
+|5     |        inst_blk_mem_gen                         |blk_mem_gen_v8_4_3_synth                       |   194|
+|6     |          \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |   194|
+|7     |            \valid.cstr                          |blk_mem_gen_generic_cstr                       |   194|
+|8     |              \bindec_a.bindec_inst_a            |bindec                                         |    13|
+|9     |              \has_mux_a.A                       |blk_mem_gen_mux                                |   134|
+|10    |              \ramloop[0].ram.r                  |blk_mem_gen_prim_width                         |     1|
+|11    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                  |     1|
+|12    |              \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9         |     1|
+|13    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized9  |     1|
+|14    |              \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10        |     1|
+|15    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized10 |     1|
+|16    |              \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11        |     1|
+|17    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized11 |     1|
+|18    |              \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12        |     1|
+|19    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized12 |     1|
+|20    |              \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13        |     1|
+|21    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized13 |     1|
+|22    |              \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14        |     1|
+|23    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized14 |     1|
+|24    |              \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15        |     1|
+|25    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized15 |     1|
+|26    |              \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16        |     1|
+|27    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized16 |     1|
+|28    |              \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17        |     1|
+|29    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized17 |     1|
+|30    |              \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18        |     2|
+|31    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized18 |     2|
+|32    |              \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0         |     1|
+|33    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0  |     1|
+|34    |              \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19        |     1|
+|35    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized19 |     1|
+|36    |              \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20        |     2|
+|37    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized20 |     2|
+|38    |              \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21        |     1|
+|39    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized21 |     1|
+|40    |              \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22        |     1|
+|41    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized22 |     1|
+|42    |              \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23        |     1|
+|43    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized23 |     1|
+|44    |              \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24        |     1|
+|45    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized24 |     1|
+|46    |              \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25        |     1|
+|47    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized25 |     1|
+|48    |              \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26        |     1|
+|49    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized26 |     1|
+|50    |              \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27        |     1|
+|51    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized27 |     1|
+|52    |              \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28        |     1|
+|53    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized28 |     1|
+|54    |              \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1         |     1|
+|55    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1  |     1|
+|56    |              \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29        |     1|
+|57    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized29 |     1|
+|58    |              \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30        |     1|
+|59    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized30 |     1|
+|60    |              \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31        |     2|
+|61    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized31 |     2|
+|62    |              \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32        |     2|
+|63    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized32 |     2|
+|64    |              \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized33        |     2|
+|65    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized33 |     2|
+|66    |              \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized34        |     2|
+|67    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized34 |     2|
+|68    |              \ramloop[36].ram.r                 |blk_mem_gen_prim_width__parameterized35        |     2|
+|69    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized35 |     2|
+|70    |              \ramloop[37].ram.r                 |blk_mem_gen_prim_width__parameterized36        |     2|
+|71    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized36 |     2|
+|72    |              \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2         |     1|
+|73    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2  |     1|
+|74    |              \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3         |     1|
+|75    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized3  |     1|
+|76    |              \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4         |     1|
+|77    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4  |     1|
+|78    |              \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5         |     1|
+|79    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized5  |     1|
+|80    |              \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6         |     2|
+|81    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized6  |     2|
+|82    |              \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7         |     1|
+|83    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized7  |     1|
+|84    |              \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8         |     1|
+|85    |                \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized8  |     1|
+|86    |    ds_inst                                      |ds                                             |    65|
+|87    |    fsm_inst                                     |fsm                                            |    82|
+|88    |    ram_wr_inst                                  |ram_wr                                         |    39|
+|89    |    rom_rd_inst                                  |rom_rd                                         |    23|
+|90    |    us_inst                                      |us                                             |  4721|
++------+-------------------------------------------------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 210 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:01:34 . Memory (MB): peak = 1125.824 ; gain = 590.289
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1125.824 ; gain = 590.289
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 716 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_top_0_0' is not ideal for floorplanning, since the cellview 'us' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1125.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+237 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 1125.824 ; gain = 840.812
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1125.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 89 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1125.824 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1/design_1_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_top_0_0_utilization_synth.rpt -pb design_1_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 18 18:42:08 2024...

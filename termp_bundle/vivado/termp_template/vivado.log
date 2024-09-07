@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 14 23:16:43 2024
+# Process ID: 8384
+# Current directory: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12584 C:\Users\qwer\Desktop\DSD_2022\termp_bundle\vivado\termp_template\termp_template.xpr
+# Log file: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/vivado.log
+# Journal file: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.xpr
+WARNING: [Board 49-91] Board repository path 'C:/Users/qwer/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+INFO: [Project 1-313] Project file moved from 'C:/Users/tedwi/Desktop/dsd_22/termp_template' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/qwer/Desktop/DSD_2022/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/tedwi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zybo-z7-20:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_processing_system7_0_0
+design_1_rst_ps7_0_50M_0
+design_1_axi_smc_0
+
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 743.074 ; gain = 114.910
+update_compile_order -fileset sources_1
+update_module_reference design_1_top_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst_n' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'rst_n': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:module_ref:top:1.0 - top_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_0/done_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Successfully read diagram <design_1> from BD file <C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_top_0_0 to use current project options
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'test_us_data'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'test_us_data_valid'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_top_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/IRQ_F2P(intr) and /top_0_upgraded_ipi/done_o(undef)
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_top_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\qwer\Desktop\DSD_2022\termp_bundle\vivado\termp_template\termp_template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_processing_system7_0_0 design_1_rst_ps7_0_50M_0 design_1_axi_smc_0}] -log ip_upgrade.log
+Upgrading 'C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_axi_smc_0 to use current project options
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+INFO: [IP_Flow 19-3420] Updated design_1_processing_system7_0_0 to use current project options
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_0/done_o(undef) and /processing_system7_0_upgraded_ipi/IRQ_F2P(intr)
+INFO: [IP_Flow 19-3420] Updated design_1_rst_ps7_0_50M_0 to use current project options
+Wrote  : <C:\Users\qwer\Desktop\DSD_2022\termp_bundle\vivado\termp_template\termp_template.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1010.027 ; gain = 24.055
+export_ip_user_files -of_objects [get_ips {design_1_processing_system7_0_0 design_1_rst_ps7_0_50M_0 design_1_axi_smc_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+set_property top design_1_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /top_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK0 
+Wrote  : <C:\Users\qwer\Desktop\DSD_2022\termp_bundle\vivado\termp_template\termp_template.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(18) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(18) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+Exporting to file c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File c:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block top_0 .
+Exporting to file C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Wed Feb 14 23:18:40 2024] Launched design_1_axi_smc_0_synth_1, design_1_top_0_0_synth_1, design_1_rst_ps7_0_50M_0_synth_1, design_1_processing_system7_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_smc_0_synth_1: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_axi_smc_0_synth_1/runme.log
+design_1_top_0_0_synth_1: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_top_0_0_synth_1/runme.log
+design_1_rst_ps7_0_50M_0_synth_1: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_rst_ps7_0_50M_0_synth_1/runme.log
+design_1_processing_system7_0_0_synth_1: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/design_1_processing_system7_0_0_synth_1/runme.log
+synth_1: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/synth_1/runme.log
+[Wed Feb 14 23:18:41 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1161.723 ; gain = 151.695
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 14 23:28:15 2024...

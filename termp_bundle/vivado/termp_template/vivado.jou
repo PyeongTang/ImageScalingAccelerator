@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Feb 14 23:16:43 2024
+# Process ID: 8384
+# Current directory: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12584 C:\Users\qwer\Desktop\DSD_2022\termp_bundle\vivado\termp_template\termp_template.xpr
+# Log file: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/vivado.log
+# Journal file: C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/qwer/Desktop/DSD_2022/termp_bundle/vivado/termp_template/termp_template.xpr
+update_compile_order -fileset sources_1
+update_module_reference design_1_top_0_0
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_processing_system7_0_0 design_1_rst_ps7_0_50M_0 design_1_axi_smc_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_1_processing_system7_0_0 design_1_rst_ps7_0_50M_0 design_1_axi_smc_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+report_ip_status -name ip_status 

@@ -1,0 +1,237 @@
+18:37:02 **** Clean-only build of configuration Debug for project ds_us_run ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  ds_us_run.elf.size  ds_us_run.elf
+' '
+
+18:37:02 Build Finished (took 177ms)
+
+18:37:02 **** Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ds_us_run_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ds_us_run_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ds_us_run.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ds_us_run_bsp/ps7_cortexa9_0/lib -o "ds_us_run.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ds_us_run.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ds_us_run.elf  |tee "ds_us_run.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34140	   2320	  23288	  59748	   e964	ds_us_run.elf
+'Finished building: ds_us_run.elf.size'
+' '
+18:37:48 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:46:08 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:48:32 **** Auto Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ds_us_run_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ds_us_run.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ds_us_run_bsp/ps7_cortexa9_0/lib -o "ds_us_run.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ds_us_run.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ds_us_run.elf  |tee "ds_us_run.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34220	   2320	  23288	  59828	   e9b4	ds_us_run.elf
+'Finished building: ds_us_run.elf.size'
+' '
+18:50:05 **** Auto Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ds_us_run_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ds_us_run.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ds_us_run_bsp/ps7_cortexa9_0/lib -o "ds_us_run.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ds_us_run.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ds_us_run.elf  |tee "ds_us_run.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34220	   2320	  23288	  59828	   e9b4	ds_us_run.elf
+'Finished building: ds_us_run.elf.size'
+' '
+18:50:17 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:51:37 **** Auto Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ds_us_run_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ds_us_run.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ds_us_run_bsp/ps7_cortexa9_0/lib -o "ds_us_run.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ds_us_run.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ds_us_run.elf  |tee "ds_us_run.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34220	   2320	  23288	  59828	   e9b4	ds_us_run.elf
+'Finished building: ds_us_run.elf.size'
+' '
+18:52:50 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:56:10 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:57:07 **** Auto Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ds_us_run_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ds_us_run.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ds_us_run_bsp/ps7_cortexa9_0/lib -o "ds_us_run.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ds_us_run.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ds_us_run.elf  |tee "ds_us_run.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34140	   2320	  23288	  59748	   e964	ds_us_run.elf
+'Finished building: ds_us_run.elf.size'
+' '
+18:57:42 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:58:15 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:59:43 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:00:44 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:01:26 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:02:58 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:04:48 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:08:18 **** Auto Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ds_us_run_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ds_us_run.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ds_us_run_bsp/ps7_cortexa9_0/lib -o "ds_us_run.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ds_us_run.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ds_us_run.elf  |tee "ds_us_run.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34140	   2320	  23288	  59748	   e964	ds_us_run.elf
+'Finished building: ds_us_run.elf.size'
+' '
+19:08:48 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:09:45 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:10:32 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:12:44 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:13:31 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:14:13 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:20:43 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:21:50 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:22:42 **** Incremental Build of configuration Debug for project ds_us_run ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
